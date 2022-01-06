@@ -21,13 +21,12 @@ console.log(saudar("Lula", "Silva", nomeCompleto));
 let calculadora = (numA, numB, operacao)=> operacao(numA + numB);
 
 
-//Falta achar o erro//
 //estrutura convencional
 function somar(numeroA, numeroB) {
     return numeroA + numeroB;
 }
 function calculadora1(numeroA, numeroB, callback) {
-    return callback(numeroA + numeroB);
+    return callback(numeroA, numeroB);
 }
 console.log(calculadora1(10, 80, somar));
 
